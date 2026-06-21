@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - PremiumWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-screen">
+
+    <div id="mainWrapper">
+        <div id="logCont">
+            <div class="brand" style="text-align: center;">PREMIUM<span>WASH</span></div>
+            <h1>Authentification</h1>
+            
+            <div class="fieldBox">
+                <label for="userInput" style="display:none;">Identifiant</label>
+                <input type="text" id="userInput" placeholder="Identifiant" autocomplete="off" title="Entrez votre identifiant">
+            </div>
+            
+            <div class="fieldBox">
+                <label for="passInput" style="display:none;">Mot de passe</label>
+                <input type="password" id="passInput" placeholder="Mot de passe" title="Entrez votre mot de passe">
+            </div>
+            
+            <button class="primary-btn" id="entryBtn">Se connecter</button>
+            <p id="errorTxt" style="color:red; font-size:12px; text-align:center; display:none; margin-top:15px;"></p>
+        </div>
+
+        <div id="succesCont">
+            <div style="font-size:40px; margin-bottom:20px; text-align:center;">✓</div>
+            <h2 id="greetMsg" style="text-align:center; font-weight:300; text-transform:uppercase;"></h2>
+            <p style="text-align:center; font-size:14px; color:#666;">Connexion réussie au système.</p>
+            <button class="primary-btn" id="dashBtn">Accéder au tableau de bord</button>
+        </div>
+    </div>
+
+    <footer>
+        Made by Omar Nassih and Mohamed Bouali Idrissi
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

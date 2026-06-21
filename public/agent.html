@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent - PremiumWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">PREMIUM<span>WASH</span></div>
+        <div>
+            <span id="nameLabel" style="font-weight:bold; margin-right:20px;"></span>
+            <button id="logoutBtn" class="btn-action">Déconnexion</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="top-bar">
+            <h2 style="text-transform:uppercase; font-weight:300;">Mes Opérations</h2>
+            <button class="primary-btn" style="width:auto; margin:0;" id="openAddBtn">+ Nouveau</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Véhicule</th>
+                    <th>Valeur</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="listData"></tbody>
+        </table>
+    </div>
+
+    <div id="sideForm" class="side-panel">
+        <button class="close-panel" id="closeFormBtn">&times;</button>
+        <h3 id="formTitle" style="text-transform:uppercase;">Nouveau Lavage</h3>
+        <input type="hidden" id="editId">
+        <div class="fieldBox">
+            <label for="vType" style="font-size:10px; text-transform:uppercase; display:block;">Type</label>
+            <select id="vType" title="Type de véhicule">
+                <option value="Citadine">Citadine</option>
+                <option value="SUV">SUV</option>
+            </select>
+        </div>
+        <div class="fieldBox">
+            <label for="vDate" style="font-size:10px; text-transform:uppercase; display:block;">Date</label>
+            <input type="date" id="vDate" title="Date du lavage">
+        </div>
+        <button class="primary-btn" id="saveBtn">Enregistrer</button>
+    </div>
+
+    <footer>Made by Omar Nassih and Mohamed Bouali Idrissi</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

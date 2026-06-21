@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "nom": "Directeur",
+      "pass": "admin2024",
+      "role": "admin"
+    },
+    {
+      "id": 201,
+      "nom": "Omar",
+      "pass": "omar123",
+      "role": "agent"
+    },
+    {
+      "id": 202,
+      "nom": "Mohamed",
+      "pass": "med123",
+      "role": "agent"
+    }
+  ],
+  "lavages": [
+    {
+      "id": 1782069975294,
+      "agentId": 201,
+      "typeVehicule": "SUV",
+      "date": "2026-06-21"
+    },
+    {
+      "id": 1782069998343,
+      "agentId": 201,
+      "typeVehicule": "SUV",
+      "date": "2026-06-21"
+    },
+    {
+      "id": 1782070039431,
+      "agentId": 201,
+      "typeVehicule": "SUV",
+      "date": "2026-06-21"
+    },
+    {
+      "id": 1782070040623,
+      "agentId": 201,
+      "typeVehicule": "SUV",
+      "date": "2026-06-21"
+    },
+    {
+      "id": 1782070041631,
+      "agentId": 201,
+      "typeVehicule": "SUV",
+      "date": "2026-06-21"
+    },
+    {
+      "id": 1782070042646,
+      "agentId": 201,
+      "typeVehicule": "SUV",
+      "date": "2026-06-21"
+    }
+  ]
+}

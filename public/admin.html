@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - PremiumWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">PREMIUM<span>WASH</span> [ADMIN]</div>
+        <button id="logoutBtn" class="btn-action">Déconnexion</button>
+    </header>
+
+    <div class="container">
+        <h2 style="text-transform:uppercase; font-weight:300;">Tableau des Performances</h2>
+
+        <div class="admin-grid">
+            <div class="stat-card">
+                <label>SUV (Coefficient)</label>
+                <span>1.5</span>
+            </div>
+            <div class="stat-card">
+                <label>Quota Quotidien</label>
+                <span>6.0</span>
+            </div>
+            <div class="stat-card">
+                <label>Bonus Unitaire</label>
+                <span>50 DH</span>
+            </div>
+        </div>
+
+        <div class="filter-bar">
+            <label for="monthPick">Mois de calcul :</label>
+            <input type="month" id="monthPick" title="Choisir le mois">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Agent de Nettoyage</th>
+                    <th>Jours Travaillés</th>
+                    <th>Total Unités</th>
+                    <th>Moyenne / J</th>
+                    <th>Statut Quota</th>
+                    <th>Bonus Mensuel</th>
+                </tr>
+            </thead>
+            <tbody id="adminTableBody"></tbody>
+        </table>
+    </div>
+
+    <footer>
+        Made by Omar Nassih and Mohamed Bouali Idrissi
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
